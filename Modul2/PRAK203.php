@@ -4,7 +4,7 @@
     </head>
     <body>
         <form actions="" method="post">
-            Nilai : <input type="text" name="nilai"><br>
+            Nilai : <input type="text" name="nilai" value=<?php if(isset($_POST['submit'])){$nilai=$_POST['nilai']; echo $nilai;}?>><br>
             Dari : <br>
             <input type="radio" id="c" name="dari" value="c">
             <label for="c">Celcius</label><br>
@@ -29,7 +29,6 @@
         </form>
 
         <?php
-            error_reporting(0);
             if(isset($_POST['submit'])){
                 $nilai=$_POST['nilai'];
                 $dari=$_POST['dari'];
