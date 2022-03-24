@@ -4,7 +4,7 @@
     </head>
     <body>
         <form actions="" method="post">
-            Nilai : <input type="text" name="nilai"> <br>
+            Nilai : <input type="text" name="nilai" value=<?php if(isset($_POST['submit'])){$nilai=$_POST['nilai']; echo $nilai;} ?>> <br>
             <input type="submit" name="submit" value="Konversi">
         </form>
 
