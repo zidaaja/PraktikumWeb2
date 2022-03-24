@@ -11,7 +11,6 @@
         </form>
 
         <?php
-            error_reporting(0);
             if(isset($_POST['urutkan'])){
                 $nama1=$_POST['nama1'];
                 $nama2=$_POST['nama2'];
