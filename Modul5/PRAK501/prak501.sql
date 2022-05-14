@@ -66,7 +66,7 @@ CREATE TABLE `member` (
 
 LOCK TABLES `member` WRITE;
 /*!40000 ALTER TABLE `member` DISABLE KEYS */;
-INSERT INTO `member` VALUES (1,'Zida','F001','Banjarmasin','2022-05-01 11:01:00','2022-05-07'),(2,'Coco','M001',' Banjarmasin Timur ','2022-05-02 10:07:00','2022-05-08'),(3,'Ayi','M002','Banjarmasin Barat','2022-05-03 21:10:35','2022-05-09'),(4,'a','a','a','2022-05-04 19:30:00','2022-05-11'),(5,'Hae','M004','Banjarmasin','2022-05-05 19:45:00','2022-05-12'),(6,'Ama','F005','Banjarmasin Utara','2022-05-02 13:24:00','2022-05-09'),(7,'Cia','F006','Banjarmasin Timur','2022-05-01 10:33:00','2022-05-08'),(9,'Ae','M010','Banjarmasin Selatan','2022-05-05 08:32:00','2022-05-12'),(10,'as','aaaa','Banjarmasin Utara','2022-05-03 09:41:00','2022-05-10');
+INSERT INTO `member` VALUES (1,'Zidaa','F001','Banjarmasin','2022-05-01 11:01:00','2022-05-07'),(2,'Coco','M001',' Banjarmasin Timur ','2022-05-02 10:07:00','2022-05-08'),(3,'Ayi','M002','Banjarmasin Barat','2022-05-03 21:10:35','2022-05-09'),(5,'Hae','M004','Banjarmasin','2022-05-05 19:45:00','2022-05-12'),(6,'Ama','F005','Banjarmasin Utara','2022-05-02 13:24:00','2022-05-09'),(7,'Cia','F006','Banjarmasin Timur','2022-05-01 10:33:00','2022-05-08'),(9,'Ae','M010','Banjarmasin Selatan','2022-05-05 08:32:00','2022-05-12'),(10,'as','aaaa','Banjarmasin Utara','2022-05-03 09:41:00','2022-05-10');
 /*!40000 ALTER TABLE `member` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -82,7 +82,7 @@ CREATE TABLE `peminjaman` (
   `tgl_pinjam` date NOT NULL,
   `tgl_kembali` date NOT NULL,
   PRIMARY KEY (`id_peminjaman`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +91,7 @@ CREATE TABLE `peminjaman` (
 
 LOCK TABLES `peminjaman` WRITE;
 /*!40000 ALTER TABLE `peminjaman` DISABLE KEYS */;
-INSERT INTO `peminjaman` VALUES (1,'2022-04-03','2022-04-10'),(2,'2022-04-10','2022-04-17'),(3,'2022-05-01','2022-05-08');
+INSERT INTO `peminjaman` VALUES (1,'2022-04-03','2022-04-10'),(2,'2022-04-10','2022-04-17'),(3,'2022-05-01','2022-05-08'),(4,'2022-05-01','2022-05-08');
 /*!40000 ALTER TABLE `peminjaman` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -104,4 +104,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-14  7:09:04
+-- Dump completed on 2022-05-14 10:07:23
