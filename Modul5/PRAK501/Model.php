@@ -49,7 +49,7 @@
                     echo "<td>";
                     echo "<a href='FormPeminjaman.php?id_peminjaman=" . $data['id_peminjaman'] . "'>Edit</a>";
                     echo " | ";
-                    echo "<a href='Peminjaman.php?id_peminjaman=" . $data['id_peminjaman'] . "' onclick=\"return confirm(Apakah anda yakin ingin menghapus?)\">
+                    echo "<a href='Peminjaman.php?id_peminjaman=" . $data['id_peminjaman'] . "' onclick=\"return confirm('Apakah anda yakin ingin menghapus?')\">
                             Hapus</a>";
                     echo "</td>";
                     echo "</tr>";
@@ -75,7 +75,7 @@
     }
     function updateMember($id, $nama, $nomor, $alamat, $tgl_daftar, $tgl_terakhir_bayar){
         $pdo_statement = connect() -> prepare(
-            "update member set nama_member='" . $nama . "', nomor_member='" . $nomor . "', alamat='" . $alamat . "', tgl_mendaftar='" . $tgl_daftar . "', tgl_terakhir_bayar='" . $tgl_terakhir_bayar . "' where id_member=" . $id);
+            "UPDATE member SET nama_member='" . $nama . "', nomor_member='" . $nomor . "', alamat='" . $alamat . "', tgl_mendaftar='" . $tgl_daftar . "', tgl_terakhir_bayar='" . $tgl_terakhir_bayar . "' where id_member=" . $id);
         $result = $pdo_statement -> execute();
         if ($result) {
             header('location:Member.php');
@@ -105,7 +105,7 @@
     }
     function updateBuku($id, $judul, $penulis, $penerbit, $thn_terbit){
         $pdo_statement = connect() -> prepare(
-            "update buku set judul_buku='" . $judul . "', penulis='" . $penulis . "', penerbit='" . $penerbit . "', tahun_terbit='" . $thn_terbit . "' where id_buku=" . $id
+            "UPDATE buku SET judul_buku='" . $judul . "', penulis='" . $penulis . "', penerbit='" . $penerbit . "', tahun_terbit='" . $thn_terbit . "' where id_buku=" . $id
         );
         $result = $pdo_statement -> execute();
         if ($result) {
